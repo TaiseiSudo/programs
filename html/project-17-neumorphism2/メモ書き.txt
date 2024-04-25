@@ -1,0 +1,41 @@
+簡易構想
+  needs
+    関係ない希望として、類似した商品名をまとめて、クラスタリングしたい(価格比較・店舗比較など)
+
+    htmlでは簡易的な位置決定のみ
+    cssでは見た目の決定。htmlのみの記述でも大まかな反映が可能にする
+    jsで内部数値の変更を行う。htmlからidで読み込み、要素の変更・追加を行う
+    cssで作成する要素は以下のつ
+      @タイトル
+      ボタン(neumorphism調。押下した際に、凹むアニメーションを追加したい。)
+      チェックボックス(両サイドにスライドするタイプを目指す。)
+      テキスト系(date, datetime-local, email, month, number, password, search, tel, text, time, url, week)
+      カラーボックス(デザイン上の問題で難しいかも)
+      スライダー
+      ラジオボタン
+      メニューボックス
+
+      円グラフ
+      棒グラフ
+      帯グラフ
+      折れ線グラフ(可能であれば複合グラフも)
+      カレンダー
+
+  plan
+    -html
+      grid-or-flex...どうしよう
+      構造
+      div:box
+        p:title
+        svg-or-span:graph
+        ?-textarea-or-p:explain
+        ?-div:legend-set
+          span:legend
+            spna:color
+            p:notes
+
+開発予定手順
+  cssでのワークフレームの作成
+  htmlによる、ページのレイアウトの決定
+  jsによる内部アニメーション・数値反映のプログラミング
+  fetchからjsへの接続の設定

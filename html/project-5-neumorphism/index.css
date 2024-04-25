@@ -1,0 +1,23 @@
+body{
+  margin: 0;
+  background-color: #ddd;
+}
+.neumorphism-flat{
+  background-color: #ddd;
+  box-shadow: -6px -6px 16px #fff, 6px 6px 16px #bbb;
+}
+.neumorphism-mound{
+  background-color: #ddd;
+  box-shadow: inset 6px 6px 16px #fff, inset -6px -6px 16px #bbb;
+  position: relative;
+}
+.neumorphism-
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 10rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+}

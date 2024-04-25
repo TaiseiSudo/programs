@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+}
+canvas{
+  vertical-align: bottom;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+#contact{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+}
+#step{
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 10rem;
+}
+#reverse{
+  position: absolute;
+  top: 0;
+  left: 20rem;
+  width: 1rem;
+}
+#run{
+  position: absolute;
+  top: 0;
+  left: 21rem;
+}

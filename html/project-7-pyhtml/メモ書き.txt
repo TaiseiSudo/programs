@@ -1,0 +1,14 @@
+ーーーpythonでhtmlファイルの更新をするーーー
+
+◯python
+・with open("filename","r or w or a") as file
+・file.read()
+・file.readlines()
+・file.write("contents")
+・slice => list[a:b] -- a <= x < b
+
+
+
+
+サイコロをミニディスプレイに表示
+ビンゴの抽選機作成

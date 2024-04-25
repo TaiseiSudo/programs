@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".\index.css">
+    <title>Information</title>
+  </head>
+  <body id="body">
+    <div class="container" id="hourly">
+      <div class="wrapper" id="h_temperature_2m">
+        <h3 class="title">気温</h3>
+        <svg id="test">
+          <!-- <defs>
+            <linearGradient id="grad" gradientTransform="rotate(70)">
+              <stop offset="0.2" stop-color="#9cf"/>
+              <stop offset="0.8" stop-color="#9cc"/>
+            </linearGradient>
+          </defs> -->
+          <polyline points="" fill="none" stroke="#f69" stroke-width="2" opacity="1" stroke-linecap="round"></polyline>
+          <polygon points="" fill="url(#hot)" stroke="url(#hot)" stroke-width="1" opacity="0.3" stroke-linecap="round"></polygon>
+        </svg>
+      </div>
+      <div class="wrapper" id="h_precipitation_probability">
+        <h3 class="title">降水確率</h3>
+        <canvas class="canvas" id="h_precipitation_probability_c"></canvas>
+      </div>
+      <div class="wrapper" id="h_precipitation">
+        <h3 class="title">降水量</h3>
+        <canvas class="canvas" id="h_precipitation_c"></canvas>
+      </div>
+      <div class="wrapper" id="h_weathercode">
+        <h3 class="title">天気コード</h3>
+        <canvas class="canvas" id="h_weathercode_c"></canvas>
+      </div>
+    </div>
+    <div class="container" id="daily">
+      <div class="wrapper" id="d_weathercode">
+      </div>
+      <div class="wrapper" id="d_temperature_2m_max">
+      </div>
+      <div class="wrapper" id="d_temperature_2m_min">
+      </div>
+      <div class="wrapper" id="d_sunrise">
+      </div>
+      <div class="wrapper" id="d_sunset">
+      </div>
+      <div class="wrapper" id="d_uv_index_max">
+      </div>
+      <div class="wrapper" id="d_precipitation_sum">
+      </div>
+      <div class="wrapper" id="d_precipitation_probability_max">
+      </div>
+    </div>
+    <!--
+      hourly
+      温度
+      降水確率
+      降水量
+      ウェザーコード
+      daily
+      ウェザーコード
+      最高気温
+      最低気温
+      日の出
+      日の入り
+      UV指数
+      降水量の合計
+      最大降水確率
+     -->
+  <svg style="position:absolute;visibility:hidden;height:0;">
+    <defs>
+      <linearGradient id="cold" gradientTransform="rotate(70)">
+        <stop offset="0.2" stop-color="#9cf"/>
+        <stop offset="0.8" stop-color="#9cc"/>
+      </linearGradient>
+      <linearGradient id="hot" gradientTransform="rotate(90)">
+        <stop offset="0.2" stop-color="#f69"/>
+        <stop offset="0.8" stop-color="#cff"/>
+      </linearGradient>
+    </defs>
+  </svg>
+  </body>
+  <script type="text/javascript" src=".\index.js"></script>
+</html>

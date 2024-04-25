@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+  background-color: #eee;
+}
+canvas {
+  vertical-align: bottom;
+  width: 0vw;
+  height: 0vh;
+  margin: 0;
+}
+.box {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  width: 300px;
+  border-radius: 1rem;
+  background-color: #e0e0e0;
+  box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.title {
+  color: #9999998f;
+  text-shadow: 2px 2px 2px #e0e0e0, 0 0 #555;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.pie {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  width: 300px;
+  height: 300px;
+  background-image: radial-gradient(rgb(224, 224, 224) 50%, transparent 50%), conic-gradient(#d5525f 0% 60%, rgb(204, 204, 204) 60% 100%);
+  border-radius: 50%;
+  box-shadow:  20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  border: solid #e0e0e0 10px;
+  box-sizing: border-box;
+}
+.pie::after{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  content: "";
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  /* border: solid 10px #ffffffaa; */
+  /* background-color: #ccc; */
+  /* box-shadow: 5px 5px 15px #bebebe, -5px -5px 15px #ffffff; */
+}
+.pie-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+  color: #9999998f;
+  text-shadow: 2px 2px 2px #e0e0e0, 0 0 #555;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.bar {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+  grid-template-columns: repeat(12,1fr);
+  align-items: end;
+  justify-items: center;
+}
+.bar-one {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: #ccc;
+}
+.bar-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #d5525f;
+}
+.bar-text {
+  position: relative;
+  transform: rotate(-90deg);
+  white-space: nowrap;
+  width: 1rem;
+  font-weight: 700;
+  color: #555;
+}
+.graph {
+  width: 100%;
+  height: 100%;
+  background-color: #e0e0e0;
+}

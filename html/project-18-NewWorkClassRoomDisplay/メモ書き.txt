@@ -1,0 +1,5 @@
+ネットワーククラスルームの掲示板サイト案
+
+掲示内容
+・電車の遅延情報(https://docs.ekispert.com/v1/api/operationLine/service/rescuenow/information.html)
+・天候情報(https://paiza.hatenablog.com/entry/2021/11/04/130000)

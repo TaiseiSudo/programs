@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".\index.css">
+    <title>BallGame</title>
+  </head>
+  <body>
+    <div class="pie" id="pie">
+      <span class="pie-text" id="pie-text">
+        <span class="pie-text-inner" id="pie-text-title">収入</span>
+        <span>
+          <span class="pie-text-inner" id="pie-text-content">60%</span>
+          <span class="pie-text-inner" id="pie-text-unit">円</span>
+        </span>
+      </span>
+    </div>
+    <!-- <div class="box">
+      <span class="title">title</span>
+      <span class="bar">
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-one"></span>
+        <span class="bar-text">1月</span>
+        <span class="bar-text">2月</span>
+        <span class="bar-text">3月</span>
+        <span class="bar-text">4月</span>
+        <span class="bar-text">5月</span>
+        <span class="bar-text">6月</span>
+        <span class="bar-text">7月</span>
+        <span class="bar-text">8月</span>
+        <span class="bar-text">9月</span>
+        <span class="bar-text">10月</span>
+        <span class="bar-text">11月</span>
+        <span class="bar-text">12月</span>
+      </span>
+    </div> -->
+    <!-- <div class="box">
+      <span class="title">title</span>
+      <svg class="graph" id="line">
+        <polygon points="10,220 20,20, 30,50 40,40 50,20 60,30 70,220" style="fill:#d5525f55;stroke:#ccc;stroke-width:1;fill-rule:nonzero;" />
+        <polygon points="10,220 20,100, 30,80 40,10 50,20 60,30 70,220" style="fill:#8052d555;stroke:#ccc;stroke-width:1;fill-rule:nonzero;" />
+      </svg>
+    </div> -->
+    <div class="box">
+      <span class="title">title</span>
+      <svg class="graph">
+        <defs>
+          <!--
+          <filter id="inner-shadow">
+            <feOffset dx="5" dy="5" />
+            <feGaussianBlur stdDeviation="3" result="offset-blur" />
+            <feComposite operator="out" in="SourceGraphic" in2="offset-blur" result="inverse" />
+            <feFlood flood-color="black" flood-opacity="0.6" result="color" />
+            <feComposite operator="in" in="color" in2="inverse" result="shadow" />
+            <feComposite operator="over" in="shadow" in2="SourceGraphic" />
+          </filter>
+          <filter id="inner">
+            <feFlood flood-opacity="0.3" result="a"></feFlood>
+            <feOffset dx="5" dy="5" result="b" in="SourceGraphic"></feOffset>
+            <feGaussianBlur stdDeviation="3" result="v" in="b"></feGaussianBlur>
+            <feComposite operator="out" result="d" in="SourceGraphic" in2="v"></feComposite>
+            <feComposite operator="in" result="f" in="a" in2="d"></feComposite>
+            <feOffset dx="-5" dy="-5" result="e" in="SourceGraphic"></feOffset>
+            <feGaussianBlur stdDeviation="3" result="g" in="e"></feGaussianBlur>
+            <feComposite operator="out" result="h" in="SourceGraphic" in2="g"></feComposite>
+            <feFlood flood-color="#fff" flood-opacity="0.3" result="i"></feFlood>
+            <feComposite operator="in" result="j" in="i" in2="h"></feComposite>
+            <feComposite result="k" in="f" in2="j"></feComposite>
+            <feComposite operator="over" k1="1" result="l" in="k" in2="SourceGraphic"></feComposite>
+          </filter> -->
+          <!-- <filter id="neumorphism" height="150%" width="150%">
+            <feOffset dx="2" dy="2" in="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feFlood flood-opacity=".5" flood-color="black"/>
+            <feComposite operator="in" in2="SourceAlpha"/>
+            <feOffset dx="-2" dy="-2" in="SourceAlpha"/>
+            <feGaussianBlur stdDeviation="4"/>
+            <feFlood flood-opacity=".5" flood-color="white"/>
+            <feComposite operator="in" in2="SourceAlpha"/>
+            <feMerge>
+              <feMergeNode/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter> -->
+          <!-- <filter id="dropshadow" height="200%">
+            <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+            <feOffset dx="2" dy="2" result="offsetblur"/>
+            <feComponentTransfer>
+              <feFuncA type="linear" slope="0.9"/>
+            </feComponentTransfer>
+            <feMerge>
+              <feMergeNode/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter> -->
+        </defs>
+        <rect x="50" y="50" rx="5" ry="5" width="100" height="100" fill="#eee" filter="url(#neumorphism)" />
+        <rect x="10" y="110" width="20" height="100" stroke="red" fill="blue" stroke-width="0" filter="url(#inner-shadow)" />
+      </svg>
+    </div>
+    <canvas id="screen"></canvas>
+  </body>
+  <script type="text/javascript" src=".\index.js"></script>
+</html>
